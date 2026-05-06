@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏥 ClinicPro - Local Clinic Management System</title>
+    <meta name="description" content="Local Clinic Management System for Small Clinics">
+    <style>
+        /* Loading screen styles */
+        .loading-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <!-- Loading screen shown while React app loads -->
+        <div class="loading-screen">
+            <div class="loading-spinner"></div>
+            <div style="margin-top: 20px; font-size: 18px; font-weight: 500;">
+                Loading Clinic Management System...
+            </div>
+            <div style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+                Version 1.0.0 • Running locally
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
